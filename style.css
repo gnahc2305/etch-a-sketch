@@ -20,8 +20,12 @@ header {
     margin: 40px;
 }
 
-output {
-    color: white;
+input {
+    background-color: white;
+}
+
+button {
+    background-color: white;
 }
 
 footer {
