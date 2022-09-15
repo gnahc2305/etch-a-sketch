@@ -4,7 +4,7 @@
 }
 
 * {
-    background-color: rgb(49, 3, 99);
+    /* background-color: rgb(49, 3, 99); */
     font-family: 'JetBrains', Arial, Helvetica, sans-serif;
 }
 
@@ -26,18 +26,17 @@ input {
 
 .apply {
     background-color: white;
-    /* margin-bottom: 50px; */
 }
 
 .reset {
     background-image: url(images/turnoff.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-color: #FF4764;
     height: 40px;
     width: 40px;
-    border-style: hidden;
     margin-left: 10px;
-    /* padding-top: 300px; */
+    padding-bottom: 13px;
 }
 
 footer {
@@ -66,3 +65,33 @@ footer {
     margin-top: 20px;
     /* box-shadow: 20px 20px 5px #1c1c1c; */
 }
+
+body  { 
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+  
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
