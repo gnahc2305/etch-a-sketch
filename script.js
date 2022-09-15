@@ -11,7 +11,10 @@ function createDivs(numberOfDivs) {
 
     for (let i = 0; i < totalNumberOfDivs; i++) {
         const divs = document.createElement('div');
-        divs.classList.add('littleDivs');
+        divs.addEventListener('mouseover', () => {
+            divs.style.background = 'black';
+        })
+        // divs.classList.add('littleDivs');
         mainContainer_div.appendChild(divs);
         divs.style.cssText = `height: ${heightOfDiv}px; width: ${widthOfDiv}px; border-width: 1px; background: white; display: flex; border-color: grey; border-style: solid; flex-wrap: nowrap`;
         
@@ -21,7 +24,11 @@ function createDivs(numberOfDivs) {
 createDivs(16);
 
 function changeSize(input) {
-    createDivs(input);
+    if (input >= 2 && input <= 100) {
+        createDivs(input);
+    } else {
+        console.log('error')
+    }
 }
 
 

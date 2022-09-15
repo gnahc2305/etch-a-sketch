@@ -24,8 +24,20 @@ input {
     background-color: white;
 }
 
-button {
+.apply {
     background-color: white;
+    /* margin-bottom: 50px; */
+}
+
+.reset {
+    background-image: url(images/turnoff.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 40px;
+    width: 40px;
+    border-style: hidden;
+    margin-left: 10px;
+    /* padding-top: 300px; */
 }
 
 footer {
