@@ -35,6 +35,10 @@ footer {
     color: white;
 }
 
+.commitChange {
+    background-color: white;
+}
+
 .mainContainer {
     display: flex;
     background-color: white;
@@ -46,4 +50,3 @@ footer {
     margin-top: 20px;
     /* box-shadow: 20px 20px 5px #1c1c1c; */
 }
-
