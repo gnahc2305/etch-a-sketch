@@ -54,9 +54,11 @@ document.querySelector('body').addEventListener('click', (e) => {
     if (e.target.tagName != 'BUTTON'){
         click = !click;
         if (click) {
-            clickText.textContent = 'Drawing: True';
+            clickText.textContent = `Drawing: True`;
+            clickText.style.cssText = 'color: green';
         } else {
-            clickText.textContent = 'Drawing: False';
+            clickText.textContent = `Drawing: False`;
+            clickText.style.cssText = 'color: red';
         }
     }
 })
