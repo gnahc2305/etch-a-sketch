@@ -90,6 +90,8 @@ input {
     border-color: red;
 }
 
+
+
 footer {
     position: fixed;
     left: 0;
@@ -102,8 +104,9 @@ footer {
     text-shadow: 5px 5px 5px #1c1c1c;
 }
 
-.commitChange {
-    background-color: white;
+.drawText {
+    text-shadow: 5px 5px 5px #1c1c1c;
+    font-size: 20px;
 }
 
 .mainContainer {

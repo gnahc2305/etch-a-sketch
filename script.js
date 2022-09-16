@@ -1,7 +1,9 @@
 const mainContainer_div = document.querySelector('.mainContainer');
 const reset_btn = document.querySelector('.reset');
 let color_btn = document.querySelector('.changeColor');
+let clickText = document.querySelector('.drawText');
 let currentColor = '#000000';
+let click = true;
 
 
 function createDivs(numberOfDivs) {
@@ -43,5 +45,18 @@ color_btn.addEventListener('change', () => {
 })
 
 function colorDiv() {
+    if (click) {
     this.style.background = currentColor;
+    }
 }
+
+document.querySelector('body').addEventListener('click', (e) => {
+    if (e.target.tagName != 'BUTTON'){
+        click = !click;
+        if (click) {
+            clickText.textContent = 'Drawing: True';
+        } else {
+            clickText.textContent = 'Drawing: False';
+        }
+    }
+})
